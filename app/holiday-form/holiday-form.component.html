@@ -1,0 +1,26 @@
+
+
+<div>
+
+  <label for="name">Introduce a holiday request : </label>
+
+  <input id="name" placeholder="employee" #employee />
+
+  <input id="StartDate" placeholder="StartDate" #start />
+
+  <input id="EndDate" placeholder="EndDate" #end />
+
+  <select name="dropdownOption" id="status" class='form-control'>
+    <option *ngFor="let st of statusType" value="st">{{st}}</option>
+  </select>
+
+  <select name="dropdownOption" id="request" class='form-control'>
+    <option *ngFor="let r of requestType" value="r">{{r}}</option>
+  </select>
+
+<!-- 
+  <button type="button" class="add-button" (click)="add()">
+    Submit holiday
+  </button>
+-->
+</div>

@@ -1,0 +1,19 @@
+
+<table>
+    <thead>
+        <th>Employee</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Category</th>
+        <th>Status</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let h of holidays">
+            <td>{{h.employee}}</td>
+            <td>{{h.start | date: 'dd/MM/yyyy'}}</td>
+            <td>{{h.end | date: 'dd/MM/yyyy'}}</td>
+            <td>{{h.category}}</td>
+            <td>{{h.status}}</td>
+        </tr>
+    </tbody>
+</table>
